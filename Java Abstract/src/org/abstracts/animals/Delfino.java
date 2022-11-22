@@ -1,6 +1,6 @@
 package org.abstracts.animals;
 
-public class Delfino extends Animale {
+public class Delfino extends Animale implements INuotante {
 
 	public Delfino(String nome) {
 		super(nome);
@@ -22,6 +22,12 @@ public class Delfino extends Animale {
 	public void mangia() {
 		System.out.println("quello che vuole");
 
+	}
+	
+	@Override
+	public void nuota() {
+		System.out.println("Sto nuotando!!!");
+		
 	}
 
 }

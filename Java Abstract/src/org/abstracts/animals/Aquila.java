@@ -1,6 +1,6 @@
 package org.abstracts.animals;
 
-public class Aquila extends Animale {
+public class Aquila extends Animale implements IVolante {
 
 	public Aquila(String nome) {
 		super(nome);
@@ -21,6 +21,11 @@ public class Aquila extends Animale {
 	@Override
 	public void mangia() {
 		System.out.println("conigli");
+	}
+	
+	@Override
+	public void vola() {
+		System.out.println("Sto volando!!!");
 	}
 
 }
