@@ -33,6 +33,26 @@ public class Main {
 		d.dormi();
 		d.mangia();
 		d.verso();
+		
+		System.out.println("\n----------\n");
+		
+		System.out.print(a.getNome() + ": ");
+		faiVolare(a);
+		
+		System.out.print(d.getNome() + ": ");
+		faiNuotare(d);
+		
+		System.out.print(p.getNome() + ": ");
+		faiVolare(p);
+		
+	}
+	
+	public static void faiVolare(IVolante animale) {
+		animale.vola();
+	}
+	
+	public static void faiNuotare(INuotante animale) {
+		animale.nuota();
 	}
 
 }
