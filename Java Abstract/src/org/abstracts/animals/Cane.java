@@ -2,6 +2,10 @@ package org.abstracts.animals;
 
 public class Cane extends Animale {
 
+	public Cane(String nome) {
+		super(nome);
+	}
+	
 	@Override
 	public void dormi() {
 		System.out.println("zzz");
